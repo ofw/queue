@@ -7,7 +7,7 @@ The queue implemented here is as fast as it is for an additional reason: it is *
 */
 package queue
 
-import "github.com/cheekybits/genny/generic"
+import "github.com/mauricelam/genny/generic"
 
 type Element generic.Type
 
