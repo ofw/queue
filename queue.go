@@ -93,8 +93,9 @@ func (q *Queue) Remove() Element {
 	if q.count <= 0 {
 		panic("queue: Remove() called on empty queue")
 	}
+	var emptyEl Element
 	ret := q.buf[q.head]
-	q.buf[q.head] = nil
+	q.buf[q.head] = emptyEl
 	// bitwise modulus
 	q.head = (q.head + 1) & (len(q.buf) - 1)
 	q.count--
